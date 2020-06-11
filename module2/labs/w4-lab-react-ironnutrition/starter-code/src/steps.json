@@ -1,0 +1,62 @@
+[
+  {
+    "iteration": 1,
+    "steps": [
+      "fork lab", 
+      "clone lab", 
+      "npm i where package.json is located to install dependencies", 
+      "npm start where package.json is located", 
+      "npm i bulma --save where package.json is located", 
+      "import 'bulma/css/bulma.css' to index.js", 
+      "import foods from './foods.json' to App.js", 
+      "make a new FoodBox component", 
+      "copy the HTML code provided into the FoodBox component", 
+      "import the FoodBox component to App.js", 
+      "call the FoodBox component in App.js"]
+  },
+  {
+    "iteration": 2,
+    "steps": [
+      "add foods an array to the initial state of App.js, we can name the variable allFoods",
+      "create a function (I called mine displayFood) to display all the food", 
+      "use map function to create a new array that will return each food using the FoodBox component", 
+      "you will get multiple errors in your console due to the input tags in FoodBox component, we'll fix that later",
+      "you should also see pizza displayed many times", 
+      "now we will edit the FoodBox component and the displayFood function so that we can see all the food in the json", 
+      "lets edit displayFood so that it passes each food object inside the map function using props, you can name 4 individual props or use the spread operator", 
+      "now modify FoodBox so that it uses the information for each food, we do this by using props.name props.calories props.image props.quantity (use this.props if you made the FoodBox component a class component)", 
+      "instead of pizza use {props.name}", 
+      "instead change the src of the img tag to {props.image}, don't forget to add alt to the img tag or the console will scream, literally, jk, not really", 
+      "change 400 to {props.calories}", 
+      "change the quantity value to {props.quantity} instead of 1", 
+      "done for this iteration, in the next iteration we will fix the console errors"]
+  },
+  {
+    "iteration": 3,
+    "steps": [
+      "add a new variable to the state, call it showForm and set it to false",
+      "add a button tag App.js before calling the displayFood function", 
+      "add an onClick event to the button that will call a function to show the form to add food, I'll call the function handleAddFoodClick", 
+      "create the function handleAddFoodClick, this function will set the state to change showForm to true", 
+      "lets create a FoodForm component", 
+      "now lets add the HTML code for a form (hint: use <form> and <input> tags), make three input tags for name, image and calories",
+      "don't forget to add a button at the end to submit the form, use <button>",
+      "import the FoodForm component to App.js",
+      "now we have to figure out a way to show the form once the button is clicked, {this.state.showForm && <FoodForm/>}", 
+      "this works, now add a handleChange function to FoodForm component so that it set the state with the info the user inputs", 
+      "make another function handleSubmit in FoodForm component to add the food to the allFoods array in App.js using addNewFoodToArray and to reset the state of FoodForm", 
+      "make sure to use event.preventDefault() to handleSubmit", 
+      "to add food to allFoods in App.js we can pass a function through props from App.js to FoodForm, I'll call it addNewFoodToArray", 
+      "this new function will copy the allFoods array, add the new food and then set the state of App.js with the new food added"]
+  },
+  {
+    "iteration": 4,
+    "steps": [
+      "create a Search component (create a new file, rcc, add functionality)", 
+      "the search component will be have an input box (i.e. and input tag) and then we can do an event handler that will pass the search input to a function from App.js, I'll call it filterFood ", 
+      "in App.js state add a new array that will hold the filteredFoods, we will set this to the original foods array", 
+      "now edit the displayFood function to show the filteredFoods instead of allFoods", 
+      "make a new function filterFood in App.js, this function will filter allFoods by the search input", 
+      ""]
+  }
+]
