@@ -1,6 +1,4 @@
 // Iteration 1: Names and Input
-// Before you start you should know
-// declare variable 
 
 // 1.1 
 // 3 ways to declare a string
