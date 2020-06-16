@@ -1,6 +1,6 @@
 # LAB | JS Basic Algorithms 
 
-## Requirements - Necessary knowledge to complete lab
+## Knowledge Requirements to Complete Lab
 
 - Variable declaration
 - Variable assignment 
@@ -8,4 +8,4 @@
 - String interpolation
 - For loops
 - Iterate through a string
-- Methods: toUpperCase, length, localeCompare,
+- Methods: toUpperCase, toLowerCase length, localeCompare, includes, split, join, reverse, replace, regex(not a method)
