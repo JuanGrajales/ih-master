@@ -14,8 +14,8 @@ var $calc = document.getElementById('calc');
 
 function updateSubtot($product) {
   // Iteration 1.1 
-  let priceUnit = $product.querySelector("td.pu > span").innerText;
-  let quantity = $product.querySelector("td.qty > label > input[type=number]").value;
+  let priceUnit = $product.querySelector("td.pu span").innerText;
+  let quantity = $product.querySelector("td.qty > label > input[type=number]").value; // .value in only for input fields
   let subTotal = priceUnit * quantity;
 
   return subTotal;
