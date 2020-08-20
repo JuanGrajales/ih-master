@@ -1,0 +1,35 @@
+[
+  {
+    "iteration": 0,
+    "steps": [
+      "create a package.json in your root directory", 
+      "install express",
+      "create a views directory, this will hold our .html files", 
+      "create a public directory, this will hold static files such as CSS stylesheets, scripts, and images", 
+      "create four html files (Home, About, Works, PhotoGallery"
+    ],
+    "syntax": [
+      "npm init -y, https://docs.npmjs.com/cli/init, npm init creates a package.json but will ask several questions, using the -y flag it will create package.json without asking these questions", 
+      "npm install express, since this is the first node package module that we are installing we will now see a node_modules folder in our directory and we will now see a dependencies section in our package.json", 
+      "mkdir views", 
+      "mkdir public, read more about using static files with express here, https://www.tutorialspoint.com/expressjs/expressjs_static_files.htm, https://expressjs.com/en/starter/static-files.html", 
+      "sidenote: the views folder and public can be named whatever you please. However, the naming convention is views and public so we"
+    ]
+  },
+  {
+    "iteration": 1,
+    "steps": [
+      "before working on our html pages lets make our server run", 
+      "import express",
+      "create an instance of express and set it to a const app, you can name it whatever you want but the convention is app", 
+      "now lets tell our server which port to listen to"
+    ],
+    "syntax": [
+      "const express = require('express')", 
+      "const app = express()", 
+      "app.listen(3000);", 
+      "mkdir public, read more about using static files with express here, https://www.tutorialspoint.com/expressjs/expressjs_static_files.htm, https://expressjs.com/en/starter/static-files.html", 
+      "sidenote: the views folder and public can be named whatever you please. However, the naming convention is views and public so we"
+    ]
+  }
+]

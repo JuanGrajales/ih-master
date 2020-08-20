@@ -1,0 +1,22 @@
+[
+  {
+    "steps": [
+      "npm install react-router react-router-dom", 
+      "import {BrowserRouter} from 'react-router-dom' into index.js ", 
+      "remove the line with ReactDom.render and add the following to index.js ReactDOM.render(<BrowserRouter><App /></BrowserRouter>,document.getElementById('root'));", 
+      "in App.js add <Link> component and import it", 
+      "syntax of using Link component <Link to=AddTheUrlPathWithQuotes>Home</Link>", 
+      "add <Switch> and <Route> components and import them", 
+      "the Switch wraps all the Route's components, in other words, Switch is a parent of all Route components",
+      "the Route should include path=UrlPath and a render that will render the component you want",]
+  },
+  {
+    "new syntax": [
+      "npm install react-router react-router-dom", 
+      "import {BrowserRouter} from 'react-router-dom'",
+      "ReactDOM.render(<BrowserRouter><App /></BrowserRouter>,document.getElementById('root'));", 
+      "impor {Link, Switch, Route} from react-router-dom", 
+      "<Switch>inside of here you'll have multiple <Route> components</Switch>", 
+      "<Route exact path=UrlPath render={props => <ComponentName {...props}/>"]
+  }
+]
